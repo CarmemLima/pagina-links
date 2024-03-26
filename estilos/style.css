@@ -28,7 +28,7 @@ section#frame-fone {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-63%, -50%);
+    transform: translate(-58%, -50%);
     height: 627px;
     width: 311px;
     background: url('../imagens/frame-iphone.png') no-repeat top center;
