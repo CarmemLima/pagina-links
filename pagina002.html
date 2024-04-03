@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina 002</title>
+    <style>
+   
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        main{
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+        }
+
+       body{
+            
+            background: url(imagens/fundo-tech-light.jpg);
+        }
+        div>iframe{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-45%, -50%);
+            height: 600px;
+            width: 600px;
+                       
+        }
+        section#tela{
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            border: 1px black solid;
+            top: 50%;
+            left: 50%;
+            transform: translate(-64%, -80%);
+        }
+
+        div#links{
+        position: absolute;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        transform: translate(50% 50%);
+        
+        }
+
+        div#links img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        div#home img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 150px 45px ;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);   
+        }
+
+        div#links #home img:hover{
+        border: 2px solid rgba(255, 255, 255, 0.603);
+        box-sizing: border-box;
+        transform: translate(-3px, -3px);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.604);
+        transition: transform 0.5s, border 1s;
+        }
+
+        
+            
+
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>
+            <iframe src="imagens/tela-iphone-14pro-removebg-preview.png" frameborder="0"></iframe>
+        </div>
+
+        <section id="tela">
+            <div id="links">
+                
+                <a href="instagram.html" target="tela"><img src="imagens/logo-instagram.jpg" alt="instagram"></a><br>
+    
+                <a href="github.html" target="tela"><img src="imagens/logo-github.jpg" alt="github"></a><br>
+    
+                <a href="behance.html" target="tela"><img src="imagens/logo-behance.png" alt="behance"></a><br>
+    
+                <a href="linkedin.html" target="tela"><img src="imagens/logo-linkedin.png" alt="linkedin"></a><br>
+            </div>
+
+            <div id="home">
+                <a href="home.html" target="tela"><img src="imagens/logo-home.jpg" alt="home"></a><br>
+            </div>
+
+        </section>
+    </main>
+
+    
+</body>
+</html>
