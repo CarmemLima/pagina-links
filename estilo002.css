@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    position: relative;
+    height: 100vh;
+   
+}
+
+body{
+    
+    background: url(imagens/fundo-tech-light.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div > p{
+    text-align: center;
+}
+section#frame-fone {/*iframe do celular*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 300px;
+    width: 300px;
+    transform: translate(-89%, -90%);
+    background: url('../imagens/frame-iphone.png') no-repeat top center;
+}
+
+iframe#tela{
+    position: relative;
+    display: block;
+    justify-content: center;
+    width: 400px;
+    height: 470px;
+}
+
+
+section#tela{/*tela dos links*/
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border: 1px rgba(0, 0, 0, 0.453) solid;    
+    background-color: rgba(255, 255, 255, 0.499);
+    border-radius: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-64%, -80%);
+}
+
+div#links{
+position: absolute;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+   
+
+}
+
+div#links img{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+margin: 10px;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+div#home img{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+margin: 150px 45px ;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);   
+}
+
+div#links img:hover{
+border: 2px solid rgba(255, 255, 255, 0.603);
+box-sizing: border-box;
+transform: translate(-3px, -3px);
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.604);
+transition: transform 0.5s, border 1s;
+}
+
+div#home img:hover{
+border: 2px solid rgba(255, 255, 255, 0.603);
+box-sizing: border-box;
+transform: translate(-3px, -3px);
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.604);
+transition: transform 0.5s, border 1s;
+}
+
