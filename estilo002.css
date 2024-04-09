@@ -27,7 +27,7 @@ section#frame-fone {/*iframe do celular*/
     left: 50%;
     height: 300px;
     width: 300px;
-    transform: translate(-89%, -90%);
+    transform: translate(-85%, -90%);
     background: url('../imagens/frame-iphone.png') no-repeat top center;
 }
 
@@ -49,7 +49,7 @@ section#tela{/*tela dos links*/
     border-radius: 10%;
     top: 50%;
     left: 50%;
-    transform: translate(-64%, -80%);
+    transform: translate(-52%, -80%);
 }
 
 div#links{
@@ -64,15 +64,16 @@ justify-content: center;
 div#links img{
 width: 40px;
 height: 40px;
-border-radius: 50%;
+border-radius: 30%;
 margin: 10px;
+
 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 div#home img{
 width: 40px;
 height: 40px;
-border-radius: 50%;
+border-radius: 30%;
 margin: 150px 45px ;
 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);   
 }
