@@ -5,10 +5,10 @@
     margin: 0px;
     padding: 0px;
 }
-main{
-    position: relative;
+html, body{
+    width: 100vw;
     height: 100vh;
-   
+
 }
 
 body{
@@ -18,29 +18,50 @@ body{
     background-attachment: fixed;
 }
 
+
+main{
+    position: relative;
+    height: 100vh;
+   
+}
+
+
 div > p{
     text-align: center;
 }
+
 section#frame-fone {/*iframe do celular*/
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 300px;
-    width: 300px;
-    transform: translate(-85%, -90%);
-    background: url('../imagens/frame-iphone.png') no-repeat top center;
+    height: 388px;
+    width: 189px;
+    
+    /*top: -54px;
+    left: -42px;
+    width: 270px; 
+    height: 499px;*/
+    transform: translate(-53%, -60%);
+    background: url('imagens/tela-iphone-14.png') no-repeat center;
+    
+    
 }
 
-iframe#tela{
-    position: relative;
-    display: block;
-    justify-content: center;
-    width: 400px;
-    height: 470px;
+iframe#tela {
+    position: relative;  
+    /*display: block;
+    justify-content: center;*/
+    top: 3px;
+    left: 5px;
+    width: 180px; 
+    height: 382px;
+    border-radius: 27px;
+    
+   
 }
 
 
-section#tela{/*tela dos links*/
+section#tela { /*tela dos links*/
     position: absolute;
     width: 130px;
     height: 130px;
@@ -53,44 +74,45 @@ section#tela{/*tela dos links*/
 }
 
 div#links{
-position: absolute;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-   
-
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-div#links img{
-width: 40px;
-height: 40px;
-border-radius: 30%;
-margin: 10px;
 
-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+div#links img{
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 div#home img{
-width: 40px;
-height: 40px;
-border-radius: 30%;
-margin: 150px 45px ;
-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);   
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    margin: 150px 45px ;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);   
 }
 
 div#links img:hover{
-border: 2px solid rgba(255, 255, 255, 0.603);
-box-sizing: border-box;
-transform: translate(-3px, -3px);
-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.604);
-transition: transform 0.5s, border 1s;
+    border: 2px solid rgba(255, 255, 255, 0.603);
+    box-sizing: border-box;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.604);
+    transition: transform 0.5s, border 1s;
 }
 
 div#home img:hover{
-border: 2px solid rgba(255, 255, 255, 0.603);
-box-sizing: border-box;
-transform: translate(-3px, -3px);
-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.604);
-transition: transform 0.5s, border 1s;
+    border: 2px solid rgba(255, 255, 255, 0.603);
+    box-sizing: border-box;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.604);
+    transition: transform 0.5s, border 1s;
 }
+
+
 
