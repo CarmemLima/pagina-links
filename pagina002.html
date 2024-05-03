@@ -4,39 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pagina 002</title>
-    <link rel="stylesheet" href="estilo002.css">
+    <link rel="stylesheet" href="estilos/estilo002.css">
 </head>
 
 <body>
     <main>
-        <section id="frame-fone">
+        <section class="frame-fone" >
           
-        <iframe src="home.html" name="tela" id="tela" frameborder="0">Seu navegador não é compatível.</iframe>
+        <iframe name="tela" id="tela" frameborder="0" >Seu navegador não é compatível.</iframe>
            
         </section>
 
-     
 
-        <section id="tela">           
-
-            <div id="links">
+        <div class="links" onclick="clicar()">
                 
-                <a href="instagram.html" target="tela"><img src="imagens/logo-instagram.jpg" alt="instagram"></a><br>
+            <a href="instagram.html" target="tela"><img src="imagens/logo-instagram.jpg" alt="instagram"></a><br>
     
-                <a href="github.html" target="tela"><img src="imagens/logo-github.jpg" alt="github"></a><br>
+            <a href="github.html" target="tela"><img src="imagens/logo-github.jpg" alt="github"></a><br>
     
-                <a href="behance.html" target="tela"><img src="imagens/logo-behancee.png" alt="behance"></a><br>
+            <a href="behance.html" target="tela"><img src="imagens/logo-behancee.png" alt="behance"></a><br>
     
-                <a href="linkedin.html" target="tela"><img src="imagens/logo-linkedinn.png" alt="linkedin"></a><br>
-            </div>
+            <a href="linkedin.html" target="tela" ><img src="imagens/logo-linkedinn.png" alt="linkedin"></a><br>
 
-            <div id="home">
-                <a href="home.html" target="tela"><img src="imagens/logo-home.jpg" alt="home"></a><br>
-            </div>
+            <a href="home.html" target="tela"><img src="imagens/logo-home.jpg" alt="home"></a><br>
+        </div>
 
-        </section>
-    </main>
-
+      
+<script>
+            
+    function clicar(){       
+        var ocultar = document.querySelector('.links')
+        ocultar.innerHTML = '' //faz ocultar as imagens dos icones
+        ocultar.style.background = 'none' //faz ocultar o fundo
+        ocultar.style.border = 'none' //faz ocultar a borda
+    }
+</script>
     
+    
+    
+
+
+</main>
 </body>
 </html>
