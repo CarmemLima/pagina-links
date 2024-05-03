@@ -54,33 +54,10 @@ iframe#tela {
    
 } 
 
-/*.teladois {iframe do celular
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 388px;
-    width: 189px;
-    transform: translate(-53%, -60%);
-    background: url('../imagens/tela-iphone-14.png') no-repeat center;
-    
-} 
 
-iframe#segtela {
-    position: relative;
-    top: 3px;
-    left: 5px;
-    width: 180px; 
-    height: 382px;
-    border-radius: 27px;
-    transform: translate(153%, 30%);
-  
-    
-
-   
-} */
 
 .links{
-    position: absolute; /*TENTAR AQUI*/
+    position: relative; 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
