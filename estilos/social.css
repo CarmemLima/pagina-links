@@ -46,7 +46,7 @@ a{
 
 
 a#return{
-
+    height: 18px;
     font-size: 0.6em;
     background-color: rgba(128, 128, 128, 0.681);
 }
