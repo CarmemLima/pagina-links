@@ -1,9 +1,7 @@
 @charset "UTF-8";
 
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
-    
-}
+
 
 *{
     margin: 0px;
@@ -15,7 +13,7 @@
 html, main, body{
     width: 100vw;
     height: 100vh;
-    background-position: center bottom;
+  
 
 }
 
@@ -29,7 +27,7 @@ body{
 
 
 main{
-    position: relative;
+    /*position: relative;*/
     height: 100vh;
    
 }
@@ -51,7 +49,7 @@ div > p{
 }
 
 iframe#tela {
-    position: absolute;
+    position: relative; /*mudei de absolute p relative*/
     top: 3px;
     left: 5px;
     width: 180px; 
@@ -65,7 +63,7 @@ iframe#tela {
 
 
 .links{
-    position: relative; 
+    position: absolute; /*mudei de relative p absolute*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
