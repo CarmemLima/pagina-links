@@ -95,7 +95,16 @@ iframe#tela {
     transition: transform 0.5s, border 1s;
 }
 
-
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: aqua;
+    width:100vw;
+    text-align: center;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif
+    
+}
 
 
 
