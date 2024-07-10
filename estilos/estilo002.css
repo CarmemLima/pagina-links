@@ -6,8 +6,13 @@
 *{
     margin: 0px;
     padding: 0px;
-   
-    
+       
+}
+
+@media (max-height: 690px){
+    footer{
+        height: 0px;
+    }
 }
 
 html, body{
