@@ -10,16 +10,33 @@
 }
 
 @media (max-height: 690px){
+
+    html, body{
+        width: 100vw;
+        height: 100vh;
+      
+    }
+
     footer{
-        height: 0px;
+        position: fixed;
+        margin-bottom: -10%;
     }
 }
 
-html, body{
-    width: 100vw;
-    height: 100dvh;
+
+
+
+@media (max-height: 490px){
+    footer{
+        position: fixed;
+        margin-bottom: -120px;
+    }
 }
 
+html, body, main{
+    width: 100vw;
+    height: 100vh;
+}
 
 body{
     position: relative;/*incluí position*/
@@ -28,10 +45,27 @@ body{
     background-attachment: fixed;
     
 }
-
-div > p{
+div>p{
+    width: 120px;
     text-align: center;
+    position: absolute;
+    top: 24%;
+    left: 17%;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(0, 0, 0, 0.599);
+    background-color: rgba(255, 255, 255, 0.382);
+    border-radius: 10px;
+    font-size: 0.6em;
+    border: solid rgba(0, 0, 0, 0.523) 1px;
+    padding: 5px;
 }
+
+
+
+/*div > p{
+    text-align: center;
+}*/
 
 .frame-fone {/*iframe do celular*/
     position: absolute;
