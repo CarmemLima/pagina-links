@@ -1,18 +1,6 @@
 @charset "UTF-8";
 
 
-@media (orientation: landscape){
-   
-    .frame-fone{/*corrigir aqui*/
-        max-height: auto;
-      
-   
-
-}   
-
-}
-
-
 *{
     margin: 0px;
     padding: 0px;
@@ -69,8 +57,8 @@ iframe#tela {
     position: relative; /*mudei de absolute p relative*/
     top: 3px;
     left: 5px;
-    /*width: 180px; 
-    height: 382px;*/
+    width: 180px; 
+    height: 382px;
     border-radius: 27px;
 } 
 
@@ -80,7 +68,7 @@ iframe#tela {
     flex-wrap: wrap;
     justify-content: center;
     width: 130px;
-    /*height: 130px;*/
+    height: 130px;
     border: 1px rgba(0, 0, 0, 0.453) solid;    
     background-color: rgba(255, 255, 255, 0.499);
     border-radius: 10%;
