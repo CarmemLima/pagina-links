@@ -10,23 +10,21 @@
 }
 
 
-
-body,#container{/*container pai*/
-    display: flex;
+html, body#cont, main#container{/*main, container pai*/
+    width: 100vw;
+    height: 100vh;
+    display: block;
     position: fixed;/*o fixed desativou a rolagem do elemento na tela*/
     background: url('../imagens/fundo-tech-light.jpg');
     background-size: cover;
     background-attachment: fixed;
-    width: 100vw;
-    height: 100vh;
-    
 }
 
 
 .frame-fone {/*iframe externo-celular*/
-    display: block;
-    position: fixed;
-  
+    display: flex;
+    position: absolute;
+    justify-content: center;
     top: 50%;
     left: 50%;
     height: 388px;
@@ -57,19 +55,17 @@ div>p{ /*caixa Minhas Redes*/
 }
 
 .links{/*caixa dos icones*/
-    position: absolute; /*mudei de relative p absolute*/
+    /*ESTRUTURA DA CAIXA*/
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    position: absolute;
+    justify-content:center;
     width: 130px;
     height: 130px;
     border: 1px rgba(0, 0, 0, 0.453) solid;    
     background-color: rgba(255, 255, 255, 0.499);
     border-radius: 10%;
-    top: 55%;
-    left: 50%;
-    transform: translate(-52%, -80%);
-   
+    flex-wrap: wrap;
+    transform: translate(3%, 100%);
 }
 
 
@@ -92,15 +88,20 @@ div>p{ /*caixa Minhas Redes*/
 iframe#tela {/*iframe das telas internas*/
     position: relative; /*mudei de absolute p relative*/
     top: 3px;
-    left: 5px;
-    width: 189px; 
+    /*left: 5px; (zerei para poder centralizar*/
+    width: 180px; /*manter 180px pois é o msm tamanho do externo*/
     height: 382px;
     border-radius: 27px;
 } 
 
 footer{
   
-    top: 50%;
+    margin-top: 85vh;
+    margin-left: 15vw;
+    width: 70vw;
+    height: 20px;
+    text-align: center;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.666), rgba(255, 255, 255, 0.333) );
     color: rgba(0, 0, 0, 0.43);
     font-size: 0.9em;
     font-family: Arial, Helvetica, sans-serif;
@@ -108,42 +109,30 @@ footer{
     
 }
 
+/*RESPONSIVIDADE PARA TELAS MENORES NO MODO PAISAGEM*/
 
-@media (orientation: landscape){/*o mediauqery deve ficar após o codigo original para que seja obedecido*/
-  
-   #cont{
-    display: flex;
-    min-width: 100vw;
-    min-height: 50vh;
-    position: absolute; /*manteer. permite a barra de rolagem e ver o restante do frame*/
-    
-    
-    
-   }
-
-    #container{
-    display: flex;
-    width: 189px;
-    height: 100vh; /*manter essa altura que permite a rolagem e ver o restante do frame*/
-    position: absolute;
-    top: 30%;
-    left: 40%;
+@media (min-height: 200px) and (max-height: 500px) and (orientation: landscape) /*altura max e min permitem um limite pra que a responsividade seja obedecida em telas menores, no modo paisagem*/{
+    html, body#cont, main#container{/*main, container pai*/
+        width: 100vw;
+        height: 140vh;
+        display: block;
+        position: absolute;/*o fixed desativou a rolagem do elemento na tela*/
+        background: url('../imagens/fundo-tech-light.jpg');
+        background-size: cover;
+        background-attachment: fixed;
         
-    }
-    .frame-fone {/*iframe externo-celular*/
-        position: relative;/*manter*/
-      
-    }
-  
-
-    .links{
-        margin-top: 25px;
+        }
+    footer{
+        display: flex;
+        justify-content: center;
+        margin-top: 130vh;
+        position: absolute;
         
-    }
 
-  }
-
-
-
+            
+        }
+    
+     }
+ 
 
 
