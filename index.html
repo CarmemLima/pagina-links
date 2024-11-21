@@ -15,21 +15,32 @@
             <p>Minhas Redes Profissionais</p> 
         </div> 
 
-        <iframe name="tela" id="tela" frameborder="0" >Seu navegador não é compatível.</iframe>
+      
+        <iframe name="tela" id="tela" frameborder="0">Seu navegador não é compatível.</iframe>
+            
+        
 
         <div class="links" onclick="clicar()">
-                
-            <a href="instagram.html" target="tela"><img src="imagens/logo-instagram.jpg" alt="instagram"></a><br>
-    
-            <a href="github.html" target="tela"><img src="imagens/logo-github.jpg" alt="github"></a><br>
+
+   
+
+            <a href="instagram.html" target="tela"><img src="imagens/logo-instagram.jpg" alt="instagram" ></a><br>
+           
+            <a href="github.html" target="tela"><img src="imagens/logo-github.jpg" alt="github" ></a><br>
     
             <a href="behance.html" target="tela"><img src="imagens/logo-behancee.png" alt="behance"></a><br>
     
-            <a href="linkedin.html" target="tela" ><img src="imagens/logo-linkedinn.png" alt="linkedin"></a><br>
+            <a href="linkedin.html" target="tela"><img src="imagens/logo-linkedinn.png" alt="linkedin"></a><br>
 
-        </div>    
+        </div>
+
+        <div id="idpush">
+            para voltar à tela inicial, role a página até o final
+        </div> 
+
+   
         </section>
-
+ 
         <footer>
             Desenvolvido por Carmem Lima
         </footer>
@@ -39,14 +50,49 @@
 
 
 <script>
-            
+    //para ocultar a div na tela principal  a variavel display none deve estar fora da function
+    var push = document.querySelector('#idpush')
+    push.style.display = 'none'
+
+    
     function clicar(){       
         var ocultar = document.querySelector('.links')
         ocultar.innerHTML = '' //faz ocultar as imagens dos icones
         ocultar.style.background = 'none' //faz ocultar o fundo
         ocultar.style.border = 'none' //faz ocultar a borda
         ocultar.style.width = '0'
+
+        
+        //para exibir a div após o clique no icone, a variavel display block deve estar dentroda function
+        var push = document.querySelector('#idpush');
+        push.style.display = 'block';
+    
+       //para que a div desapareça em alguns segundos usei a propriedade setTimeout que define em milissegundos a execução apenas uma vez 
+       setTimeout(() => {
+            push.style.display = 'none';
+        }, 5000);
     }
+    
+        
+
+    
+    
+    /*
+function mudarEstado(idpush) {
+var push = document.querySelector('#idpush')
+        push.style.display = 'none'
+
+        if(display == 'none'){
+            document.querySelector('#idpush').style.display = 'block';
+        } else{
+            document.querySelector('#idpush').style.display = 'none';
+        }
+
+}*/
+    
+    
+
+
 </script>
 
 </body>

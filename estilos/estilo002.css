@@ -20,6 +20,25 @@ html, body#cont, main#container{/*main, container pai*/
     background-attachment: fixed;
 }
 
+#idpush{
+    width: 75%;
+    height: 15%;
+    border: 1px solid rgba(0, 0, 0, 0.362);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.382);
+
+    display: flex; /* display none oculta a div na tela principal*/
+    position: absolute;
+    text-align: center;
+    color: rgb(109, 107, 107);
+    align-items: center;/*alinha ao centro o conteudo dentro da div*/
+    top: 30%;
+
+
+
+    font-size: 0.8em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 .frame-fone {/*iframe externo-celular*/
     display: flex;
@@ -93,6 +112,8 @@ iframe#tela {/*iframe das telas internas*/
     height: 382px;
     border-radius: 27px;
 } 
+
+
 
 footer{
   
