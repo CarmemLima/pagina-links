@@ -22,17 +22,18 @@ html, body#cont, main#container{/*main, container pai*/
 
 #idpush{
     width: 75%;
-    height: 15%;
+    height: 25%;
     border: 1px solid rgba(0, 0, 0, 0.362);
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.382);
+    background-color: rgba(71, 71, 71, 0.829);
 
     display: flex; /* display none oculta a div na tela principal*/
     position: absolute;
     text-align: center;
-    color: rgb(109, 107, 107);
-    align-items: center;/*alinha ao centro o conteudo dentro da div*/
-    top: 30%;
+    color:  white;
+    align-content: center;/*alinha ao centro o conteudo dentro da div*/
+    top: 35%;
+    
 
 
 
@@ -53,12 +54,12 @@ html, body#cont, main#container{/*main, container pai*/
     
 }
 
-div>p{ /*caixa Minhas Redes*/
+div>p{ /*caixa Titulo*/
     display: block;
     width: 120px;
     text-align: center;
     position: fixed;
-    top: 22%;
+    top: 25%;
     left: 17%;
     
 
@@ -68,6 +69,7 @@ div>p{ /*caixa Minhas Redes*/
     border-radius: 10px;
     font-size: 0.8em;
     text-shadow: 0.8px 0.8px rgb(237, 230, 230);
+    
     font-weight: bold;
     border: solid rgba(0, 0, 0, 0.523) 1px;
     padding: 5px;
@@ -143,13 +145,13 @@ footer{
         background-attachment: fixed;
         
         }
+
+        
     footer{
         display: flex;
         justify-content: center;
         margin-top: 130vh;
         position: absolute;
-        
-
             
         }
     
