@@ -1,7 +1,7 @@
 
-        //para ocultar a div na tela principal  a variavel display none deve estar fora da function
-        var push = document.querySelector('#idpush')
-        push.style.display = 'none' //display none para ocultar a div na tela inicial
+    //para ocultar a div na tela principal  a variavel display none deve estar fora da function
+    var push = document.querySelector('#idpush')
+    push.style.display = 'none' //display none para ocultar a div na tela inicial
     
    
     function clicar(){
